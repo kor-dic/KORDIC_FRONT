@@ -84,6 +84,7 @@ export default function HomePage () {
                     </section>
                 </div>
 
+                <div className="h-[100px]" />
                 <Navbar/>
             </div>
         </main>
