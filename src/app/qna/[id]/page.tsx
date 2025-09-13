@@ -139,14 +139,13 @@ export default function QnADetailPage() {
 
                 </div>
             </div>
+
             <div className="h-[80px]"></div>
             <div className="fixed bottom-0 p-5 w-full bg-white border-t border-gray-20">
                 <div className="flex items-center h-[52px] bg-gray-10 px-4 w-full rounded-full">
                     <input placeholder={'댓글을 남겨주세요.'} className="w-full"/>
                     <button className="px-4 py-3 bg-conic-orange-30 text-white rounded-full whitespace-nowrap button h-fit">등록</button>
                 </div>
-
-
             </div>
         </main>
     )
