@@ -38,6 +38,8 @@
   --color-conic-blue-40: #2651df;
   --color-conic-blue-50: #1233a1;
 
+  --color-conic-darkblue: #16264d;
+
   --shadow-middlemodal: 0px 4px 50px 0px #0000000d;
   --shadow-location-search: 0px 4px 28px 0px #0000000d;
 
@@ -95,124 +97,122 @@ body {
 }
 
 /* 폰트 */
-@utility h1 {
-  font-family: Pretendard, serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -0.8px;
-}
-
-@utility h2 {
+@utility title-lg {
   font-family: Pretendard, serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 36px */
-  letter-spacing: -0.48px;
+  letter-spacing: -0.36px;
 }
 
-@utility h3 {
+@utility title-md {
   font-family: Pretendard, serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 150%; /* 30px */
-  letter-spacing: -0.4px;
+  letter-spacing: -0.3px;
 }
 
-@utility sub1 {
+@utility title-sm {
+  font-family: Pretendard, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.24px;
+}
+
+@utility subtitle-lg {
   font-family: Pretendard, serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 27px */
-  letter-spacing: -0.36px;
+  letter-spacing: -0.27px;
 }
 
-@utility sub2 {
+@utility subtitle-md {
   font-family: Pretendard, serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
+  letter-spacing: -0.24px;
 }
 
-@utility body1 {
+@utility subtitle-sm {
+  font-family: Pretendard, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.21px;
+}
+
+@utility body-md {
   font-family: Pretendard, serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
+  letter-spacing: -0.24px;
 }
 
-@utility body2 {
+@utility body-sm {
   font-family: Pretendard, serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
-  letter-spacing: -0.28px;
+  letter-spacing: -0.21px;
 }
 
-@utility button-lg {
-  font-family: Pretendard, serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 16px */
-  letter-spacing: -0.32px;
-}
-
-@utility button-sm {
+@utility button {
   font-family: Pretendard, serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 14px */
-  letter-spacing: -0.28px;
+  letter-spacing: -0.21px;
 }
 
-@utility caption {
+@utility small {
   font-family: Pretendard, serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 18px */
-  letter-spacing: -0.24px;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: -0.18px;
 }
 
-@utility badge {
+@utility badge-md {
+  font-family: Pretendard, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.21px;
+}
+
+@utility badge-sm {
   font-family: Pretendard, serif;
   font-size: 12px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 100%; /* 12px */
-  letter-spacing: -0.24px;
+  font-weight: 500;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: -0.18px;
 }
 
-/* 버튼 컴포넌트 */
-.blue-200-button {
-  display: flex;
-  height: 52px;
-  padding: 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-  border-radius: 16px;
-  background: #ff363c;
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1200px;
+  --breakpoint-wide: 1440px;
+}
 
-  color: #fff;
-  text-align: center;
-  /* Button_lg */
-  font-family: Pretendard, serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 16px */
-  letter-spacing: -0.32px;
+.custom-shadow {
+  @apply shadow-none; /* 기존 shadow 제거 */
+  box-shadow: 0 -4px 10px 0 rgba(0,0,0,0.08);
 }
