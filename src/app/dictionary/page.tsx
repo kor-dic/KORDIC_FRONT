@@ -28,18 +28,7 @@ export default function DictionaryPage () {
                                 <HiOutlineAnnotation className="text-white"/>
                             </div>
                         </div>
-                        <p className="subtitle-lg">존댓말/반말</p>
-                    </section>
-
-                    <section
-                        className={`bg-[#e8effe] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
-                        <div className="flex items-center justify-center w-full h-[60px]">
-                            <div
-                                className="flex items-center justify-center bg-[#3b8cf4] w-[32px] h-[32px] rounded-full">
-                                <HiOutlineExclamation className="text-white"/>
-                            </div>
-                        </div>
-                        <p className="subtitle-lg">생활 간, 언행 주의 안내</p>
+                        <p className="subtitle-lg">커뮤니케이션 <br/>가이드</p>
                     </section>
 
                     <section
@@ -73,7 +62,7 @@ export default function DictionaryPage () {
                             </div>
                         </div>
 
-                        <p className="subtitle-lg">장소별 주의사항 안내 (절, 교회)</p>
+                        <p className="subtitle-lg">장소별 주의사항 <br/>안내 (절, 교회)</p>
                     </section>
 
                     <section
@@ -88,7 +77,7 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
-                        className={`bg-[#ccd2f0] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
+                        className={`bg-[#e2e4f1] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
                                 className="flex items-center justify-center bg-[#3a4ca8] w-[32px] h-[32px] rounded-full">
@@ -99,10 +88,10 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
-                        className={`bg-[#feeaee] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
+                        className={`bg-[#e8effe] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
-                                className="flex items-center justify-center bg-[#fe3c66] w-[32px] h-[32px] rounded-full">
+                                className="flex items-center justify-center bg-[#3b8cf4] w-[32px] h-[32px] rounded-full">
                                 <HiOutlineHeart className="text-white"/>
                             </div>
                         </div>
@@ -110,37 +99,38 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
-                        className={`bg-[#feeaee] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
+                        className={`bg-[#f2e0f5] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
-                                className="flex items-center justify-center bg-[#fe3c66] w-[32px] h-[32px] rounded-full">
+                                className="flex items-center justify-center bg-[#9a30ae] w-[32px] h-[32px] rounded-full">
                                 <HiOutlineMail className="text-white"/>
                             </div>
                         </div>
                         <p className="subtitle-lg">재난문자</p>
                     </section>
 
-                    <section
-                        className={`bg-[#feeaee] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
-                        <div className="flex items-center justify-center w-full h-[60px]">
-                            <div
-                                className="flex items-center justify-center bg-[#fe3c66] w-[32px] h-[32px] rounded-full">
-                                <HiOutlineLibrary className="text-white"/>
-                            </div>
-                        </div>
-                        <p className="subtitle-lg">대사관</p>
-                    </section>
 
                     <section
-                        className={`bg-[#feeaee] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
+                        className={`bg-[#eef7e3] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
-                                className="flex items-center justify-center bg-[#fe3c66] w-[32px] h-[32px] rounded-full">
+                                className="flex items-center justify-center bg-[#7db249] w-[32px] h-[32px] rounded-full">
                                 <HiOutlineSpeakerphone className="text-white"/>
                             </div>
                         </div>
 
-                        <p className="subtitle-lg">응급 상황 시, 대처 방안</p>
+                        <p className="subtitle-lg">응급 상황 시, <br/>대처 방안</p>
+                    </section>
+
+                    <section
+                        className={`bg-[#eaf8ff] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
+                        <div className="flex items-center justify-center w-full h-[60px]">
+                            <div
+                                className="flex items-center justify-center bg-[#18a8f1] w-[32px] h-[32px] rounded-full">
+                                <HiOutlineLibrary className="text-white"/>
+                            </div>
+                        </div>
+                        <p className="subtitle-lg">대사관</p>
                     </section>
 
                 </div>
