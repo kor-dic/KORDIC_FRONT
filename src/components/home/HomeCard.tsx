@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import {useRouter} from "next/navigation";
 
 interface HomeCardProps {
     location: string
@@ -11,8 +12,11 @@ interface HomeCardProps {
 }
 
 export default function HomeCard({storeName, location, tag1, tag2, tag3, imageUrl}: HomeCardProps) {
+    const router = useRouter();
     return (
-        <div className="flex flex-col gap-y-2 shadow-md w-[220px] rounded-b-[16px]">
+        <div onClick={() => {
+            router.push('/home/1')
+        }} className="flex flex-col gap-y-2 shadow-md w-[220px] rounded-b-[16px]">
             <div className="relative w-[220px] h-[130px]">
                 <Image src={imageUrl} alt='프로필' fill className="object-cover rounded-t-[16px]" />
             </div>
