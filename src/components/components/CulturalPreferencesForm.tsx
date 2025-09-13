@@ -29,7 +29,7 @@ export default function CulturalPreferencesForm() {
 
                 </section>
                 <section className="flex flex-col gap-y-2">
-                    <p className="title-md">발표식품 선호도</p>
+                    <p className="title-md">발효식품 선호도</p>
                     <div className="flex gap-x-2">
                         {content2List.map((content2) => {
                             return (
