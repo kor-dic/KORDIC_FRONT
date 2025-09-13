@@ -15,6 +15,7 @@ export default function LanguageModal({isModalOpen, setIsModalOpen} : LanguageMo
                     return (
                         <button key={language} onClick={() =>{
                             setSelectedLanguage(language)
+                            setIsModalOpen(false)
                         }} className={`${selectedLanguage === language ? 'py-3 body-md rounded-[16px] border border-conic-orange-30 bg-conic-orange-10': 'py-3 body-md rounded-[16px] border border-gray-20'}`}>{language}</button>
                     )
                 })}
