@@ -5,7 +5,7 @@ import {useRouter} from "next/navigation";
 import { HiOutlineChevronLeft } from "react-icons/hi";
 
 interface HeaderProps {
-    headerType?: 'default' | 'dynamic'
+    headerType?: 'default' | 'dynamic' | 'signup'
     onBack?: () => void
     title?: string
 }
@@ -13,7 +13,7 @@ interface HeaderProps {
 export default function Header({headerType = 'default', onBack, title}: HeaderProps) {
     const router = useRouter()
 
-    const renderHeaderType = (headerType: 'default' | 'dynamic' | undefined) => {
+    const renderHeaderType = (headerType: 'default' | 'dynamic' | 'signup' | undefined) => {
         switch (headerType) {
             case 'dynamic':
                 return (
@@ -24,6 +24,15 @@ export default function Header({headerType = 'default', onBack, title}: HeaderPr
                                 router.back()
                             }}  className={'w-[24px] h-[24px] text-gray-50'}/>
                             <h1 className="subtitle-md absolute left-1/2 -translate-x-1/2 whitespace-nowrap">{title}</h1>
+                        </div>
+                    </header>
+                )
+            case 'signup':
+                return (
+                    <header
+                        className="fixed z-10 flex justify-between items-center h-[80px] border-b border-gray-20 w-full bg-white px-5">
+                        <div className="relative w-[150px] h-[40px] mt-2">
+                            <Image src={'/kodic.png'} fill alt='로고' className="object-cover"></Image>
                         </div>
                     </header>
                 )

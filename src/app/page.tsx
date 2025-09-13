@@ -16,7 +16,7 @@ export default function Home() {
               <div className="absolute bottom-[32px] w-full px-5">
                   <button
                       onClick={() => {
-                          router.push('/onboarding');
+                          router.push('/sign-up');
                       }}
                       className="bg-conic-orange-30 text-white button-lg py-4 w-full rounded-full hover:shadow-md transition cursor-pointer">
                       시작하기

@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 const buttonStyleType = {
     active: 'bg-conic-orange-30 text-white',
     disabled: 'text-gray5 bg-gray2',
-    outline: 'border border-gray2 text-gray5',
+    outline: 'border border-gray-20 text-gray5',
 }
 const buttonSize = {
     lg: 'py-4 px-6',
