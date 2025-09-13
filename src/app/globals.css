@@ -96,7 +96,17 @@ body {
   border-radius: 999px;
 }
 
+
+
 /* 폰트 */
+@utility heading {
+  font-family: Pretendard, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.24px;
+}
 @utility title-lg {
   font-family: Pretendard, serif;
   font-size: 24px;

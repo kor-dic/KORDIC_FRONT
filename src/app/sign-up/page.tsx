@@ -10,7 +10,7 @@ import Button from "@/components/common/Button";
 import {useRouter} from "next/navigation";
 
 export default function SignUpPage() {
-    const [step, setStep] = useState<1 | 2 | 3 | 4>(1)
+    const [step, setStep] = useState<number>(1)
     const router = useRouter()
     return (
         <main className="flex items-center justify-center">
@@ -51,7 +51,7 @@ export default function SignUpPage() {
         </main>
     )
 }
-function ProcessBar ({step}: {step: 1 | 2 | 3 | 4}) {
+function ProcessBar ({step}: {step: number}) {
     return (
         <div className="flex gap-x-2 px-5 mb-6">
             <div className={`h-[5px] w-full ${step >= 1 ? 'bg-conic-orange-30' : 'bg-gray-20'}`}></div>

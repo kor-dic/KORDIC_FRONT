@@ -3,14 +3,17 @@ import { HiOutlineGlobeAlt } from "react-icons/hi";
 import { HiOutlineBell } from "react-icons/hi";
 import {useRouter} from "next/navigation";
 import { HiOutlineChevronLeft } from "react-icons/hi";
+import {Dispatch, SetStateAction} from "react";
 
 interface HeaderProps {
+    setIsAlarmModalOpen?: Dispatch<SetStateAction<boolean>>;
+    setIsLanguageModalOpen?: Dispatch<SetStateAction<boolean>>;
     headerType?: 'default' | 'dynamic' | 'signup'
     onBack?: () => void
     title?: string
 }
 
-export default function Header({headerType = 'default', onBack, title}: HeaderProps) {
+export default function Header({headerType = 'default', onBack, title, setIsAlarmModalOpen, setIsLanguageModalOpen}: HeaderProps) {
     const router = useRouter()
 
     const renderHeaderType = (headerType: 'default' | 'dynamic' | 'signup' | undefined) => {
@@ -44,8 +47,16 @@ export default function Header({headerType = 'default', onBack, title}: HeaderPr
                             <Image src={'/kodic.png'} fill alt='로고' className="object-cover"></Image>
                         </div>
                         <div className="flex gap-x-2">
-                            <HiOutlineBell className="w-[32px] h-[32px] text-conic-darkblue"/>
-                            <HiOutlineGlobeAlt className="w-[32px] h-[32px] text-conic-darkblue"/>
+                            <HiOutlineBell onClick={() => {
+                                if (setIsAlarmModalOpen) {
+                                    setIsAlarmModalOpen(true)
+                                }
+                            }} className="w-[32px] h-[32px] text-conic-darkblue"/>
+                            <HiOutlineGlobeAlt onClick={() => {
+                                if (setIsLanguageModalOpen) {
+                                    setIsLanguageModalOpen(true)
+                                }
+                            }} className="w-[32px] h-[32px] text-conic-darkblue"/>
                         </div>
                     </header>
                 )

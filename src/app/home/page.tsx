@@ -4,13 +4,21 @@ import Navbar from "@/components/common/Navbar";
 import { HiLocationMarker } from "react-icons/hi";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import HomeCard from "@/components/home/HomeCard";
+import AlarmModal from "@/components/modal/AlarmModal";
+import {useState} from "react";
+import LanguageModal from "@/components/modal/LanguageModal";
 
 
 export default function HomePage () {
+    const [isAlarmModalOpen, setIsAlarmModalOpen] = useState(false)
+    const [isLanguageModalOpen, setIsLanguageModalOpen] = useState(false)
+
     return (
         <main className="flex items-center justify-center">
+            {isAlarmModalOpen ? (<AlarmModal setIsAlarmModalOpen={setIsAlarmModalOpen} isAlarmModalOpen={isAlarmModalOpen} />) : null}
+            {isLanguageModalOpen ? (<LanguageModal setIsModalOpen={setIsLanguageModalOpen} isModalOpen={isLanguageModalOpen}/>) : null}
             <div className="relative w-[400px] bg-white min-h-screen">
-                <Header/>
+                <Header setIsAlarmModalOpen={setIsAlarmModalOpen} setIsLanguageModalOpen={setIsLanguageModalOpen} />
                 <div className="pt-[112px]" />
                 <div className="flex flex-col gap-y-6 px-5">
                     <section className="flex gap-x-1 items-center">
@@ -65,8 +73,6 @@ export default function HomePage () {
                         <section className="flex gap-x-4 overflow-y-scroll">
                             <HomeCard imageUrl={'/home/coffee9.png'} storeName={'낮달커피'} location={'충북 청주시 흥덕구 복대동'} tag2={'넓고 쾌적한'} tag1={'커스텀 음료'} tag3={'크로플 맛집'} />
                             <HomeCard imageUrl={'/home/coffee10.png'} storeName={'달라또'} location={'충북 청주시 흥덕구 복대동'} tag2={'쫀득쿠키'} tag1={'수제 디저트'} tag3={'신상카페'} />
-
-                            <HomeCard/>
                         </section>
                     </section>
                     <section className="flex flex-col gap-y-2">
