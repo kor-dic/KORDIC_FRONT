@@ -20,7 +20,9 @@ export default function Header({headerType = 'default', onBack, title}: HeaderPr
                     <header
                         className="fixed z-10 flex justify-between items-center h-[80px] border-b border-gray-20 w-full bg-white px-5">
                         <div className="relative flex w-full items-center bg-white">
-                            <HiOutlineChevronLeft className={'w-[24px] h-[24px] text-gray-50'}/>
+                            <HiOutlineChevronLeft onClick={() => {
+                                router.back()
+                            }}  className={'w-[24px] h-[24px] text-gray-50'}/>
                             <h1 className="subtitle-md absolute left-1/2 -translate-x-1/2 whitespace-nowrap">{title}</h1>
                         </div>
                     </header>

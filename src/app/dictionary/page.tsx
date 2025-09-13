@@ -2,18 +2,18 @@
 import Header from "@/components/common/Header";
 import Navbar from "@/components/common/Navbar";
 import { HiOutlineSaveAs } from "react-icons/hi";
-import { HiOutlineShieldExclamation } from "react-icons/hi";
 import { HiOutlineAnnotation } from "react-icons/hi";
 import { HiOutlineRss } from "react-icons/hi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import { HiOutlineExclamation } from "react-icons/hi";
 import { HiOutlineHome } from "react-icons/hi";
 import { HiOutlineLibrary } from "react-icons/hi";
 import { HiOutlineHeart } from "react-icons/hi";
 import { HiOutlineMail } from "react-icons/hi";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
+import {useRouter} from "next/navigation";
 
 export default function DictionaryPage () {
+    const router = useRouter();
     return (
         <main className="flex items-center justify-center">
             <div className="relative w-[400px] bg-white min-h-screen">
@@ -21,6 +21,9 @@ export default function DictionaryPage () {
                 <div className="pt-[112px]"></div>
                 <div className="grid grid-cols-2 gap-3 px-5">
                     <section
+                        onClick={() => {
+                            router.push('/dictionary/1')
+                        }}
                         className={`bg-[#feeaee] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
@@ -32,6 +35,9 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
+                        onClick={() => {
+                            router.push('/dictionary/2')
+                        }}
                         className={`bg-[#ede6ff] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
@@ -43,6 +49,9 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
+                        onClick={() => {
+                            router.push('/dictionary/3')
+                        }}
                         className={`bg-[#d6efe2] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
@@ -54,6 +63,9 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
+                        onClick={() => {
+                            router.push('/dictionary/4')
+                        }}
                         className={`bg-[#ffddd4] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
@@ -66,6 +78,9 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
+                        onClick={() => {
+                            router.push('/dictionary/5')
+                        }}
                         className={`bg-[#feefc5] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
@@ -77,6 +92,9 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
+                        onClick={() => {
+                            router.push('/dictionary/6')
+                        }}
                         className={`bg-[#e2e4f1] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
@@ -88,6 +106,9 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
+                        onClick={() => {
+                            router.push('/dictionary/7')
+                        }}
                         className={`bg-[#e8effe] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
@@ -99,6 +120,9 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
+                        onClick={() => {
+                            router.push('/dictionary/8')
+                        }}
                         className={`bg-[#f2e0f5] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
@@ -111,6 +135,9 @@ export default function DictionaryPage () {
 
 
                     <section
+                        onClick={() => {
+                            router.push('/dictionary/9')
+                        }}
                         className={`bg-[#eef7e3] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
@@ -123,6 +150,9 @@ export default function DictionaryPage () {
                     </section>
 
                     <section
+                        onClick={() => {
+                            router.push('/dictionary/10')
+                        }}
                         className={`bg-[#eaf8ff] h-[150px] flex flex-col gap-y-2 items-center justify-center w-full rounded-[16px] p-4 text-center`}>
                         <div className="flex items-center justify-center w-full h-[60px]">
                             <div
@@ -134,7 +164,7 @@ export default function DictionaryPage () {
                     </section>
 
                 </div>
-                <div className="pt-[100px]"></div>
+                <div className="pt-[100px]" />
                 <Navbar/>
             </div>
         </main>
