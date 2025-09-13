@@ -2,6 +2,8 @@
 import Header from "@/components/common/Header";
 import {useParams} from "next/navigation";
 import {useEffect} from "react";
+import CommunicationGuidelines from "@/components/dictionary/CommunicationGuidelines";
+import LocationNotice from "@/components/dictionary/LocationNotice";
 
 export default function DictionaryPage() {
     const params = useParams()
@@ -34,10 +36,22 @@ export default function DictionaryPage() {
                 return '대사관'
         }
     }
+
+    const renderContent = (pathname: string | string[] | undefined) => {
+        switch (pathname) {
+            case '1':
+                return <CommunicationGuidelines />
+            case '4':
+                return <LocationNotice />
+        }
+    }
+
     return (
         <main>
             <div className="relative w-[400px] bg-white min-h-screen">
                 <Header headerType={'dynamic'} title={renderTitle(params.id)} />
+                <div className="h-[112px]" />
+                {renderContent(params.id)}
             </div>
         </main>
 )

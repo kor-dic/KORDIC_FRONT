@@ -5,6 +5,7 @@ import Image from "next/image";
 import { HiOutlineChat } from "react-icons/hi";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { HiOutlineHeart } from "react-icons/hi";
+import { HiOutlineThumbUp } from "react-icons/hi";
 
 export default function QnADetailPage() {
     return (
@@ -46,7 +47,7 @@ export default function QnADetailPage() {
                     <div className="flex justify-between items-center mt-5">
                         <section className="flex gap-x-2 items-center  ">
                             <div className="flex items-center gap-x-1">
-                                <HiOutlineHeart className="w-[18px] h-[18px] text-gray-40"/>
+                                <HiOutlineThumbUp className="w-[18px] h-[18px] text-gray-40"/>
                                 <div className="body-md text-gray-40"> 3</div>
                             </div>
                             <div className="w-[2px] h-[2px] rounded-full bg-gray-40"></div>
@@ -56,7 +57,7 @@ export default function QnADetailPage() {
                             </div>
                         </section>
                         <button className="flex items-center gap-x-1 border border-gray-20 button text-gray-50 px-4 h-[32px] rounded-full bg-white">
-                            <HiOutlineHeart className="w-[18px] h-[18px] text-gray-40"/></button>
+                            <HiOutlineThumbUp className="w-[18px] h-[18px] text-gray-40"/></button>
                     </div>
 
                 </div>
