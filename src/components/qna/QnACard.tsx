@@ -7,8 +7,9 @@ interface QnACardProps {
     name: string;
     time: string;
     view: string;
+    profileUrl: string;
 }
-export default function QnACard({title, content, name, view, time}: QnACardProps) {
+export default function QnACard({title, content, name, view, time, profileUrl}: QnACardProps) {
     const router = useRouter();
     return (
         <div
@@ -22,7 +23,7 @@ export default function QnACard({title, content, name, view, time}: QnACardProps
             </div>
             <div className="flex badge-md text-gray-40 gap-x-[6px]">
                 <div className="relative w-[16px] h-[16px]">
-                    <Image src={'/profile.png'} alt={'프로필'} fill className="object-cover rounded-full"></Image>
+                    <Image src={profileUrl} alt={'프로필'} fill className="object-cover rounded-full"></Image>
                 </div>
                 <p className="">{name}</p>
                 <p>|</p>
